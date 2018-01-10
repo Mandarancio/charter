@@ -30,7 +30,7 @@ double plot_get_max_x(plot* p)
     if (!p->n)
         return 0;
     if (p->x_data == NULL)
-        return p->n;
+        return p->n-1;
     double max_x = p->x_data[0];
     unsigned int i;
     for (i = 1; i<p->n;i++)
@@ -46,7 +46,7 @@ double plot_get_min_x(plot* p)
     if (!p->n)
         return 0;
     if (p->x_data == NULL)
-        return p->n;
+        return 0;
     double min_x = p->x_data[0];
     unsigned int i;
     for (i = 1; i<p->n;i++)
@@ -59,7 +59,7 @@ double plot_get_min_x(plot* p)
 
 double plot_get_max_y(plot* p)
 {
-    if (!p->n)
+    if (!p->n || !p->y_data)
         return 0;
     double max_x = p->y_data[0];
     unsigned int i;
@@ -73,7 +73,7 @@ double plot_get_max_y(plot* p)
 
 double plot_get_min_y(plot* p)
 {
-    if (!p->n)
+    if (!p->n || !p->y_data)
         return 0;
     double min_x = p->y_data[0];
     unsigned int i;
@@ -92,14 +92,20 @@ double chart_get_max_x(chart *c)
         if (!c->n_plots)
             return 0;
         unsigned int i;
-        double m = plot_get_max_x(c->plots->plot);
+        double M = plot_get_max_x(c->plots->plot);
+        double m = plot_get_min_x(c->plots->plot);
         for (i = 1; i < c->n_plots; i++)
         {
-            double v = plot_get_max_x(chart_get_plot(c, i));
-            if (v > m)
+            plot * p = chart_get_plot(c, i);
+            double v = plot_get_max_x(p);
+            if (v > M)
+                M = v;
+            v = plot_get_min_x(p);
+            if (v < m)
                 m = v;
         }
-        return m;
+        M += (M-m)*0.05;
+        return M;
     }
     return c->x_axis.range_max;
 }
@@ -110,13 +116,19 @@ double chart_get_min_x(chart *c)
         if (!c->n_plots) 
             return 0;
         unsigned int i;
+        double M = plot_get_max_x(c->plots->plot);
         double m = plot_get_min_x(c->plots->plot);
         for (i = 1; i < c->n_plots; i++)
         {
-            double v = plot_get_min_x(chart_get_plot(c, i));
+            plot * p = chart_get_plot(c, i);
+            double v = plot_get_max_x(p);
+            if (v > M)
+                M = v;
+            v = plot_get_min_x(p);
             if (v < m)
                 m = v;
         }
+        m -= (M-m)*0.05;
         return m;
     }
     return c->x_axis.range_min;
@@ -128,14 +140,20 @@ double chart_get_max_y(chart *c)
         if (!c->n_plots)
             return 0;
         unsigned int i;
-        double m = plot_get_max_y(c->plots->plot);
+        double M = plot_get_max_y(c->plots->plot);
+        double m = plot_get_min_y(c->plots->plot);
         for (i = 1; i < c->n_plots; i++)
         {
-            double v = plot_get_max_y(chart_get_plot(c, i));
-            if (v > m)
+            plot * p = chart_get_plot(c, i);
+            double v = plot_get_max_y(p);
+            if (v > M)
+                M = v;
+            v = plot_get_min_y(p);
+            if (v < m)
                 m = v;
         }
-        return m;
+        M += (M-m)*0.05;
+        return M;
     }
     return c->y_axis.range_max;
 }
@@ -146,16 +164,22 @@ double chart_get_min_y(chart *c)
         if (!c->n_plots)
             return 0;
         unsigned int i;
+        double M = plot_get_max_y(c->plots->plot);
         double m = plot_get_min_y(c->plots->plot);
         for (i = 1; i < c->n_plots; i++)
         {
-            double v = plot_get_min_y(chart_get_plot(c, i));
+            plot * p = chart_get_plot(c, i);
+            double v = plot_get_max_y(p);
+            if (v > M)
+                M = v;
+            v = plot_get_min_y(p);
             if (v < m)
                 m = v;
         }
+        m -= (M-m)*0.05;
         return m;
     }
-    return c->y_axis.range_max;
+    return c->y_axis.range_min;
 }
 
 
@@ -230,4 +254,42 @@ plot*
 chart_get_plot(chart* c, unsigned int i)
 {
     return plot_at(c->plots, i);
+}
+
+
+void chart_free(chart *c)
+{
+    if (c->title)
+        free(c->title);
+    if (c->x_axis.label)
+        free(c->x_axis.label);
+    if (c->y_axis.label)
+        free(c->y_axis.label);
+    plot_list_free(c->plots);
+    free(c);
+}
+
+
+void plot_list_free(plotList *pl)
+{
+    if (!pl)
+        return;
+    plot_free(pl->plot);
+    plot_list_free(pl->next);
+    free(pl);
+}
+
+void plot_free(plot *p)
+{
+    if (!p)
+        return;
+    if (p->color)
+        free(p->color);
+    if (p->label)
+        free(p->label);
+    if (p->x_data)
+        free(p->x_data);
+    if (p->y_data)
+        free(p->y_data);
+    free(p);
 }
