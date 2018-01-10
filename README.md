@@ -33,6 +33,9 @@ Resutls in:
 |```height```| plot height |
 |```csv://file_path#tag```| load a csv and use column ```tag``` as values |
 
+**commas** and **spaces** are valid separator for arrays and the sytax in general.
+For the definitions **spaces**, **tabs** and **:** are equivalents. So ```x: 1 2 3``` is equal to ```x 1,2,3```.
+
 ## Marker integration
 At the moment _charter_ is integrated in [Marker](https://github.com/fabiocolacio/Marker/)!
 
