@@ -26,6 +26,8 @@ Resutls in:
 |```x```| x values of a plot |
 |```y```| y values of a plot | 
 |```color```| colour of a plot |  
+|```line-width``` or ```lw```| plot line width |
+|```line-style``` or ```ls```| plot line style ('--' or 'dashed', '-' or 'normal', ':' or dotted, '/' or 'none')|
 |```marker```| marker style of a plot ('o', 'x', '+', 's', ' ')|
 |```range```| min and max value for an axis |
 |```title```| plot title |
@@ -41,7 +43,6 @@ For the definitions **spaces**, **tabs** and **:** are equivalents. So ```x: 1 2
 In the next future I will improve the svg quality, the memory performance, and the look and feel of the output plus the following features:
  
  - Log scales
- - Line width and line style
  - scatter and bar plot
 
 ## Marker integration
