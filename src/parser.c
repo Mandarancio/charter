@@ -27,8 +27,10 @@
 #define TOK_Y_DATA      "y"         /*done*/
 /*later*/
 #define TOK_COLOR       "color"     /*done*/
-#define TOK_LIN_STYLE   "line-style"
-#define TOK_LIN_WIDTH   "line-width"
+#define TOK_LIN_STYLE   "line-style"/*done*/
+#define TOK_LIN_WIDTH   "line-width"/*done*/
+#define TOK_ALT_LIN_STYLE "ls"      /*done*/
+#define TOK_ALT_LIN_WIDTH "lw"      /*done*/
 #define TOK_MARKER      "marker"    /*done*/
 
 #define TOK_RANGE       "range"     /*done*/
@@ -192,16 +194,20 @@ void
 parse_x_data(chart *chart, char* line)
 {
     unsigned int n = strlen(line);
+    if (n == 0)
+        return;
+
     char * local = malloc((1+n)*sizeof(char));
     local[n] = 0;
     memcpy(local, line, n);
+    
     char * tok = local;
     char * point;
     
     unsigned int l = 0;
     _dList * list = NULL;
     /* count values */
-    while((tok = strtok_r(tok, " ,)\n", &point)) != NULL)
+    while((tok = strtok_r(tok, "\t ,)\n", &point)) != NULL)
     {
         if (startsWith("csv://", tok))
         {   
@@ -217,7 +223,12 @@ parse_x_data(chart *chart, char* line)
         tok = NULL;
     }
     
-    
+    if (l == 0 || list == NULL)
+    {
+        free(local);
+        return;
+    }
+
     double * data = malloc(l*sizeof(double)); 
     int i;
     for (i = l-1 ; i >= 0 ; i--)
@@ -237,6 +248,9 @@ void
 parse_y_data(chart *chart, char* line)
 {
     unsigned int n = strlen(line);
+    if (n == 0)
+        return;
+
     char * copy = malloc((1+n)*sizeof(char));
     copy[n] = 0;
     memcpy(copy, line, n);
@@ -246,7 +260,7 @@ parse_y_data(chart *chart, char* line)
     unsigned int l = 0;
     _dList * list = NULL;
     /* count values */
-    while((tok = strtok_r(tok, " ,", &point)) != NULL)
+    while((tok = strtok_r(tok, "\t ,", &point)) != NULL)
     {
         if (startsWith("csv://", tok))
         {   
@@ -316,8 +330,34 @@ plot * init_plot()
     p->color = NULL;
     p->line_style = NORMAL;
     p->marker_style = 0;
-    p->line_width = 1;
+    p->line_width = 2;
     return p;
+}
+
+lineStyle 
+parse_line_style(char * c)
+{
+    strip(c, ' ');
+    if (c == NULL || strlen(c) == 0)
+        return NORMAL;
+    
+    if (strcmp(c, "-") == 0 || strcmp(c, "normal") ==0)
+    {
+        return NORMAL;
+    }
+    if (strcmp(c, ":") == 0 || strcmp(c, "dotted") == 0)
+    {
+        return DOTTED;
+    }
+    if (strcmp(c, "--") == 0 || strcmp(c, "dashed") == 0)
+    {
+        return DASHED;
+    }
+    if (strcmp(c, "/")  == 0 || strcmp(c, "none") == 0 || strcmp(c, "NONE") == 0 || strcmp(c, "None"))
+    {
+        return NOLINE;
+    }
+    return NORMAL;
 }
 
 _pstate 
@@ -419,8 +459,23 @@ parse_line(char* line, chart * chart, _pstate prev)
                 p->marker_style = 0;
             }
             break;
+        }else if ((strcmp(tok, TOK_LIN_WIDTH) == 0 || strcmp(tok, TOK_ALT_LIN_WIDTH) == 0) && prev == PLOT)
+        {
+            strip(rest, ' ');
+            double v = atof(rest);
+            if (v > 0)
+            {
+                plot * p = plot_get_last_element(chart->plots)->plot;
+                p->line_width = v;
+            }
+            break;
+        } else if ((strcmp(tok, TOK_LIN_STYLE) == 0 || strcmp(tok, TOK_ALT_LIN_STYLE) == 0)&& prev == PLOT)
+        {
+            plot * p = plot_get_last_element(chart->plots)->plot;
+            p->line_style = parse_line_style(rest);
         }
         tok = NULL;
+        break;
     }
     free(copy);
     return prev;
@@ -437,8 +492,9 @@ parse_chart(char *text)
     char* line = strtok_r(copy, "\n", &tok_pointer);
     _pstate state = NONE;
     while (line != NULL)
-    {
-        state = parse_line(line, nchart, state);
+    {   
+        if (strlen(line) > 0)
+            state = parse_line(line, nchart, state);
         line = strtok_r(NULL, "\n", &tok_pointer);
     }
     free(copy);

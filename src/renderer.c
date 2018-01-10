@@ -21,6 +21,8 @@ struct{
     double left;
     double w;
     double h;
+    axisMode x_mode;
+    axisMode y_mode;
 } typedef svg_plane;
 
 struct
@@ -79,6 +81,10 @@ svg_plane compute_plane(chart * c)
     int h = c->height - (c->x_axis.label != NULL ? 3*p_h : 2*p_h);
     
     svg_plane p;
+
+    p.x_mode = c->x_axis.mode;
+    p.y_mode = c->y_axis.mode;
+    
     p.h = h;
     p.w = w;
     p.top = p_h;
@@ -89,6 +95,7 @@ svg_plane compute_plane(chart * c)
     p.y_max = chart_get_max_y(c);
     p.x_min = chart_get_min_x(c);
     p.y_min = chart_get_min_y(c);
+
     return p;
 }
 
@@ -402,6 +409,15 @@ void draw_point(char* buffer, char style, char* color, double x, double y)
     }
 }
 
+char * get_style(lineStyle s)
+{
+    if (s == DOTTED)
+        return "stroke-dasharray=\"1, 5\"";
+    if (s == DASHED)
+        return "stroke-dasharray=\"5, 5\"";
+    return "";
+}
+
 void legend_to_svg(char* buffer, plotList * plots, svg_plane plane)
 {
     if (plots == NULL || plots->plot == NULL)
@@ -444,8 +460,11 @@ void legend_to_svg(char* buffer, plotList * plots, svg_plane plane)
                 memcpy(color, colormap[ind%10], 7);
             }
             y+= dh;
-            sprintf(buffer, "%s<line x1=\"%.2f\" y1=\"%.2f\" x2=\"%.2f\"  y2=\"%.2f\" style=\"fill:none; stroke:%s; stroke-width:2;\" />\n",
-                    buffer, x+10, y-4, x+dw, y-4, color);
+            if (p->line_style != NOLINE)
+            {
+                sprintf(buffer, "%s<line x1=\"%.2f\" y1=\"%.2f\" x2=\"%.2f\"  y2=\"%.2f\" %s style=\"fill:none; stroke:%s; stroke-width:%.2f;\" />\n",
+                        buffer, x+10, y-4, x+dw, y-4, get_style(p->line_style), color, p->line_width);
+            }
             sprintf(buffer, "%s<text x=\"%.2f\" y=\"%.2f\" fill=\"#111\" font-size=\"12\" text-anchor=\"middle\"  clip-path=\"url(#leg-area)\">%s</text>\n",
                     buffer, x+dw+30, y, p->label);
 
@@ -474,29 +493,34 @@ void line_plot_to_svg(char* buffer, chart* c, plot* p, svg_plane plane, unsigned
     }
     unsigned int i;
     double dy = plane.h/(plane.y_max-plane.y_min);
-    
-    sprintf(buffer, "%s<polyline points=\"",
-            buffer);
-    for (i=0; i< n;i++){
-        double x = p->x_data == NULL ? i : p->x_data[i];
-        double y = p->y_data[i];
-
-        x = get_x(x, plane, c->x_axis);
-        y = get_y(y, plane, c->y_axis);
-
-        sprintf(buffer, "%s%.2f,%.2f ",
-                buffer, x, y);
-    }
     char * color = p->color;
+    
     if (!color)
     {
         color = malloc(8*sizeof(char));
         memcpy(color, colormap[index%10], 7);
     }
 
-    sprintf(buffer, "%s\" style=\"fill:none; stroke:%s; stroke-width:2;\" clip-path=\"url(#plot-area)\"/>\n",
-            buffer, color);
-  
+    if (p->line_style != NOLINE)
+    {
+        sprintf(buffer, "%s<polyline points=\"",
+                buffer);
+        for (i=0; i< n;i++){
+            double x = p->x_data == NULL ? i : p->x_data[i];
+            double y = p->y_data[i];
+
+            x = get_x(x, plane, c->x_axis);
+            y = get_y(y, plane, c->y_axis);
+
+            sprintf(buffer, "%s%.2f,%.2f ",
+                    buffer, x, y);
+        }
+       
+        char * dash_style = get_style(p->line_style);
+
+        sprintf(buffer, "%s\" style=\"fill:none; stroke:%s; stroke-width:%.2f;\" %s clip-path=\"url(#plot-area)\"/>\n",
+                buffer, color, p->line_width, dash_style);
+    }
     if (is_marker(p->marker_style))
     {
                 
