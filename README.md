@@ -12,6 +12,7 @@ plot:
 ```
 
 Resutls in:
+
 ![result](test/test.svg)
 
 ## Syntax
