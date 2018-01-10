@@ -36,6 +36,14 @@ Resutls in:
 **commas** and **spaces** are valid separator for arrays and the sytax in general.
 For the definitions **spaces**, **tabs** and **:** are equivalents. So ```x: 1 2 3``` is equal to ```x 1,2,3```.
 
+## Future improvements
+
+In the next future I will improve the svg quality, the memory performance, and the look and feel of the output plus the following features:
+ 
+ - Log scales
+ - Line width and line style
+ - scatter and bar plot
+
 ## Marker integration
 At the moment _charter_ is integrated in [Marker](https://github.com/fabiocolacio/Marker/)!
 
