@@ -1,6 +1,8 @@
 # CHARTER
 A simple markdown **DSL** and **C Library** to generate svg plot from a minimal syntax.
 
+
+
 ## Example
 
 Simple syntax example:
@@ -15,7 +17,7 @@ Resutls in:
 
 ![result](test/test.svg)
 
-## Syntax
+## DSL Syntax
 
 | syntax | description |
 | :----- | :------  |
@@ -40,6 +42,43 @@ Resutls in:
 **commas** and **spaces** are valid separator for arrays and the sytax in general.
 For the definitions **spaces**, **tabs** and **:** are equivalents. So ```x: 1 2 3``` is equal to ```x 1,2,3```.
 
+## Use as a library
+if you want to include charter as a library here a simple example
+
+```c
+#include "charter/parser.h"
+#include "charter/renderer.h"
+
+\***
+ * YOUR CODE
+ ***\
+ chart * parsed = parse_chart(string_to_parse);
+ /* chart is the structure you can also create it programmatically in your code
+    and render it to svg using chart_to_svg */
+ char * svg = chart_to_svg(parsed);
+ chart_free(parsed);
+\***\
+```
+
+## Use as SVG generator
+
+The build process generate as well an executable: ```charter```. It is capable of generate an svg plot from a charter dsl file:
+
+```
+charter your_dsl_file > output.svg
+```
+
+## Build and install
+
+Use ```meson``` and ```ninja```:
+
+```bash
+mkdir build
+cd build
+meson ..
+ninja 
+sudo ninja install
+```
 ## Future improvements
 
 In the next future I will improve the svg quality, the memory performance, and the look and feel of the output plus the following features:
