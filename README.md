@@ -9,7 +9,8 @@ Simple syntax example:
 
 ```
 plot:
-    y: 0, 2, 4, 9
+    x: 0, 1, 2, 3
+    y: 0, 1, 4, 9
     label: x^2
 ```
 
