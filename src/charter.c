@@ -30,7 +30,7 @@ double plot_get_max_x(plot* p)
     if (!p->n)
         return 0;
     if (p->x_data == NULL)
-        return p->n-1;
+        return p->n;
     double max_x = p->x_data[0];
     unsigned int i;
     for (i = 1; i<p->n;i++)
@@ -46,7 +46,7 @@ double plot_get_min_x(plot* p)
     if (!p->n)
         return 0;
     if (p->x_data == NULL)
-        return 0;
+        return 1;
     double min_x = p->x_data[0];
     unsigned int i;
     for (i = 1; i<p->n;i++)
@@ -97,12 +97,15 @@ double chart_get_max_x(chart *c)
         for (i = 1; i < c->n_plots; i++)
         {
             plot * p = chart_get_plot(c, i);
-            double v = plot_get_max_x(p);
-            if (v > M)
-                M = v;
-            v = plot_get_min_x(p);
-            if (v < m)
-                m = v;
+            if (p->n > 0)
+            {
+                double v = plot_get_max_x(p);
+                if (v > M)
+                    M = v;
+                v = plot_get_min_x(p);
+                if (v < m)
+                    m = v;
+            }
         }
         if (c->x_axis.mode == LINEAR)
             M += (M-m)*0.05;
@@ -122,12 +125,15 @@ double chart_get_min_x(chart *c)
         for (i = 1; i < c->n_plots; i++)
         {
             plot * p = chart_get_plot(c, i);
-            double v = plot_get_max_x(p);
-            if (v > M)
-                M = v;
-            v = plot_get_min_x(p);
-            if (v < m)
-                m = v;
+            if (p->n > 0)
+            {
+                double v = plot_get_max_x(p);
+                if (v > M)
+                    M = v;
+                v = plot_get_min_x(p);
+                if (v < m)
+                    m = v;
+            }
         }
         if (c->x_axis.mode == LINEAR)
             m -= (M-m)*0.05;
@@ -147,12 +153,15 @@ double chart_get_max_y(chart *c)
         for (i = 1; i < c->n_plots; i++)
         {
             plot * p = chart_get_plot(c, i);
-            double v = plot_get_max_y(p);
-            if (v > M)
-                M = v;
-            v = plot_get_min_y(p);
-            if (v < m)
-                m = v;
+            if (p->n > 0)
+            {
+                double v = plot_get_max_y(p);
+                if (v > M)
+                    M = v;
+                v = plot_get_min_y(p);
+                if (v < m)
+                    m = v;
+            }
         }
         if (c->y_axis.mode == LINEAR)
             M += (M-m)*0.05;
@@ -172,12 +181,15 @@ double chart_get_min_y(chart *c)
         for (i = 1; i < c->n_plots; i++)
         {
             plot * p = chart_get_plot(c, i);
-            double v = plot_get_max_y(p);
-            if (v > M)
-                M = v;
-            v = plot_get_min_y(p);
-            if (v < m)
-                m = v;
+            if (p->n > 0)
+            {
+                double v = plot_get_max_y(p);
+                if (v > M)
+                    M = v;
+                v = plot_get_min_y(p);
+                if (v < m)
+                    m = v;
+            }
         }
         if (c->y_axis.mode == LINEAR)
             m -= (M-m)*0.05;
