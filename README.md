@@ -88,7 +88,7 @@ sudo ninja install
 In the next future I will improve the svg quality, the memory performance, and the look and feel of the output plus the following features:
  
  - better log scales
- - bar plot
+ - more options on grid
  - more styling options
 
 ## Marker integration
