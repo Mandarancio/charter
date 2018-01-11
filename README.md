@@ -24,6 +24,7 @@ Resutls in:
 | :----- | :------  |
 |```plot```| create a new line plot|
 |```scatter```| create a new scatter plot|
+|```scatter```| create a new bar plot  |
 |```x-axis```| parameters for the x axis |
 |```y-axis```| parameters for the y axis |
 |```label``` | label for axis or plot |
@@ -32,6 +33,8 @@ Resutls in:
 |```color```| colour of a plot |  
 |```line-width``` or ```lw```| plot line width |
 |```line-style``` or ```ls```| plot line style ('--' or 'dashed', '-' or 'normal', ':' or dotted, '/' or 'none')|
+|```bar-width``` or ```bw``` | bar plot width|
+|```line-color```| bar plot line color |
 |```marker```| marker style of a plot ('o', 'x', '+', 's', ' ')|
 |```range```| min and max value for an axis |
 |```mode``` | axis mode ('linear' or 'log') |
