@@ -9,7 +9,8 @@ Simple syntax example:
 
 ```
 plot:
-    y: 0, 2, 4, 9
+    x: 0, 1, 2, 3
+    y: 0, 1, 4, 9
     label: x^2
 ```
 
@@ -24,7 +25,7 @@ Resutls in:
 |```plot```| create a new line plot|
 |```scatter```| create a new scatter plot|
 |```x-axis```| parameters for the x axis |
-|```y-axsi```| parameters for the y axis |
+|```y-axis```| parameters for the y axis |
 |```label``` | label for axis or plot |
 |```x```| x values of a plot |
 |```y```| y values of a plot | 
