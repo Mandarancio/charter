@@ -10,6 +10,7 @@ lib_sources = [
     'src/charter.c',
     'src/renderer.c',
     'src/printer.c',
+    'src/svg_utils.c',
     'src/csv_parser/csvparser.c'
 ]
 
@@ -18,6 +19,7 @@ bin_sources = [
     'src/charter.c',
     'src/renderer.c',
     'src/printer.c',
+   	'src/svg_utils.c',
     'src/csv_parser/csvparser.c',
     'src/main.c'
 ]
@@ -33,5 +35,6 @@ executable(
     PROJECT_NAME,
     sources: bin_sources,
     link_args: '-lm',
+    c_args: '-g',
     install: true
 )
