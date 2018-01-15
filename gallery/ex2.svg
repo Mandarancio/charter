@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="400">
+<defs><clipPath id="plot-area"><rect x="70.00" y="25.00" width="495.00" height="325.00"/>
+</clipPath></defs><line clip-path="url(#plot-area)"  x1="92.50" y1="25.00" x2="92.50" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="242.50" y1="25.00" x2="242.50" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="392.50" y1="25.00" x2="392.50" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="542.50" y1="25.00" x2="542.50" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="338.85" x2="565.00" y2="338.85"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="280.71" x2="565.00" y2="280.71"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="222.57" x2="565.00" y2="222.57"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="164.43" x2="565.00" y2="164.43"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="106.29" x2="565.00" y2="106.29"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="48.15" x2="565.00" y2="48.15"  style="stroke: #ccc;stroke-width:0.50"/>
+<polyline clip-path="url(#plot-area)" style="fill:none; stroke:red; stroke-width:2.00;"  points="92.50,39.77 167.50,78.97 242.50,124.02 317.50,172.64 392.50,224.44 467.50,278.82 542.50,335.23 " /><line clip-path="url(#plot-area)"  x1="89.50" y1="36.77" x2="95.50" y2="42.77"  style="stroke: red;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="95.50" y1="36.77" x2="89.50" y2="42.77"  style="stroke: red;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="164.50" y1="75.97" x2="170.50" y2="81.97"  style="stroke: red;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="170.50" y1="75.97" x2="164.50" y2="81.97"  style="stroke: red;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="239.50" y1="121.02" x2="245.50" y2="127.02"  style="stroke: red;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="245.50" y1="121.02" x2="239.50" y2="127.02"  style="stroke: red;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="314.50" y1="169.64" x2="320.50" y2="175.64"  style="stroke: red;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="320.50" y1="169.64" x2="314.50" y2="175.64"  style="stroke: red;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="389.50" y1="221.44" x2="395.50" y2="227.44"  style="stroke: red;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="395.50" y1="221.44" x2="389.50" y2="227.44"  style="stroke: red;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="464.50" y1="275.82" x2="470.50" y2="281.82"  style="stroke: red;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="470.50" y1="275.82" x2="464.50" y2="281.82"  style="stroke: red;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="539.50" y1="332.23" x2="545.50" y2="338.23"  style="stroke: red;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="545.50" y1="332.23" x2="539.50" y2="338.23"  style="stroke: red;stroke-width:1.50"/>
+<rect  x="70.00" y="25.00" width="495.00" height="325.00" style="fill:none; fill-opacity:1.00; stroke:black; stroke-width:0.50;" />
+<text  x="317.50" y="387.00" text-anchor="middle"  font-weight="regular">Cost</text>
+<text  transform="rotate(270,10.00,187.50) translate(0, 10)"  x="10.00" y="187.50" text-anchor="middle"  font-weight="regular">Error</text>
+<line  x1="92.50" y1="351.00" x2="92.50" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="92.50" y="370.00" text-anchor="middle"  font-weight="regular">2.0</text>
+<line  x1="242.50" y1="351.00" x2="242.50" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="242.50" y="370.00" text-anchor="middle"  font-weight="regular">4.0</text>
+<line  x1="392.50" y1="351.00" x2="392.50" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="392.50" y="370.00" text-anchor="middle"  font-weight="regular">6.0</text>
+<line  x1="542.50" y1="351.00" x2="542.50" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="542.50" y="370.00" text-anchor="middle"  font-weight="regular">8.0</text>
+<line  x1="64.00" y1="338.85" x2="69.00" y2="338.85"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="342.85" text-anchor="end"  font-weight="regular">-8.0</text>
+<line  x1="64.00" y1="280.71" x2="69.00" y2="280.71"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="284.71" text-anchor="end"  font-weight="regular">-7.0</text>
+<line  x1="64.00" y1="222.57" x2="69.00" y2="222.57"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="226.57" text-anchor="end"  font-weight="regular">-6.0</text>
+<line  x1="64.00" y1="164.43" x2="69.00" y2="164.43"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="168.43" text-anchor="end"  font-weight="regular">-5.0</text>
+<line  x1="64.00" y1="106.29" x2="69.00" y2="106.29"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="110.29" text-anchor="end"  font-weight="regular">-4.0</text>
+<line  x1="64.00" y1="48.15" x2="69.00" y2="48.15"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="52.15" text-anchor="end"  font-weight="regular">-3.0</text>
+</svg>
+
