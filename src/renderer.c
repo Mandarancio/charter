@@ -264,7 +264,7 @@ axis_to_svg(char*       buffer,
     }
     if (c->y_axis.label != NULL)
     {
-        double tx = 1;
+        double tx = 10;
         double ty = p_h+plane.h/2;
         char * transform = malloc(64*sizeof(char));
         memset(transform, 0, 64);
