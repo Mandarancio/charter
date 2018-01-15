@@ -196,19 +196,24 @@ compute_ticks(double min,
                 pos[i] = origin + dx*((vals[i]) - min);
             }
         }else{
-            l = malloc(8*sizeof(char));
-            memset(l, 0, 8);
+    
             if (v == 0)
             {
+                l = malloc(8*sizeof(char));
+                memset(l, 0, 8);
                 sprintf(l, "0");
             }
             else if (e > -2 && e < 2)
             {
+                l = malloc(8*sizeof(char));
+                memset(l, 0, 8);
                 sprintf(l, "%.1f", v);
             }
             else
             {
-                sprintf(l, "%.1fe%d", d, e);
+                l = malloc(128*sizeof(char));
+                memset(l, 0, 128);
+                sprintf(l, "<tspan>%.1fe<tspan  font-size=\"11\" baseline-shift=\"super\">%d</tspan></tspan>", d,e);
             }
             if (vertical){
                 pos[i] = origin - dx*(vals[i] - min);
