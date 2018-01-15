@@ -1,5 +1,12 @@
+title: reconstruction error vs compression
+x-axis:
+	label: compression
+	mode: log
+y-axis:
+	label: mse
 plot:
-	x: 0 1 2 3
-	y: 0 2 4 9
-	label: x^2
- 
+	x: 1 10    100
+	y: 0 0.01  0.05
+	label: f_avg
+ 	marker: s
+ 	ls: --

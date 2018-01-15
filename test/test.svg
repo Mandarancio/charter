@@ -1,36 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="400">
-<defs><clipPath id="plot-area"><rect x="52.50" y="25.00" width="512.00" height="350.00"/></clipPath></defs><line x1="75.77" y1="25.00" x2="75.77" y2="375.00" style="stroke: #ccc;stroke-width:0.5"/>
-<line x1="230.92" y1="25.00" x2="230.92" y2="375.00" style="stroke: #ccc;stroke-width:0.5"/>
-<line x1="386.08" y1="25.00" x2="386.08" y2="375.00" style="stroke: #ccc;stroke-width:0.5"/>
-<line x1="541.23" y1="25.00" x2="541.23" y2="375.00" style="stroke: #ccc;stroke-width:0.5"/>
-<line x1="52.50" y1="359.09" x2="564.50" y2="359.09" style="stroke: #ccc;stroke-width:0.5"/>
-<line x1="52.50" y1="288.38" x2="564.50" y2="288.38" style="stroke: #ccc;stroke-width:0.5"/>
-<line x1="52.50" y1="217.68" x2="564.50" y2="217.68" style="stroke: #ccc;stroke-width:0.5"/>
-<line x1="52.50" y1="146.97" x2="564.50" y2="146.97" style="stroke: #ccc;stroke-width:0.5"/>
-<line x1="52.50" y1="76.26" x2="564.50" y2="76.26" style="stroke: #ccc;stroke-width:0.5"/>
-<polyline points="75.77,359.09 230.92,288.38 386.08,217.68 541.23,40.91 " style="fill:none; stroke:#db5f57; stroke-width:2;" clip-path="url(#plot-area)"/>
-<rect x="52" y="25" width="512" height="350" style="fill:none; stroke:black; stroke-width:0.5;" />
-<line x1="75.77" y1="376.00" x2="75.77" y2="381.00" style="stroke: black;stroke-width:1"/>
-<text x="75.77" y="395.00" text-anchor="middle">0</text>
-<line x1="230.92" y1="376.00" x2="230.92" y2="381.00" style="stroke: black;stroke-width:1"/>
-<text x="230.92" y="395.00" text-anchor="middle">1.0</text>
-<line x1="386.08" y1="376.00" x2="386.08" y2="381.00" style="stroke: black;stroke-width:1"/>
-<text x="386.08" y="395.00" text-anchor="middle">2.0</text>
-<line x1="541.23" y1="376.00" x2="541.23" y2="381.00" style="stroke: black;stroke-width:1"/>
-<text x="541.23" y="395.00" text-anchor="middle">3.0</text>
-<line x1="46.50" y1="359.09" x2="51.50" y2="359.09" style="stroke: black;stroke-width:1"/>
-<text x="42.50" y="359.09"  text-anchor="end" dy=".4em">0</text>
-<line x1="46.50" y1="288.38" x2="51.50" y2="288.38" style="stroke: black;stroke-width:1"/>
-<text x="42.50" y="288.38"  text-anchor="end" dy=".4em">2.0</text>
-<line x1="46.50" y1="217.68" x2="51.50" y2="217.68" style="stroke: black;stroke-width:1"/>
-<text x="42.50" y="217.68"  text-anchor="end" dy=".4em">4.0</text>
-<line x1="46.50" y1="146.97" x2="51.50" y2="146.97" style="stroke: black;stroke-width:1"/>
-<text x="42.50" y="146.97"  text-anchor="end" dy=".4em">6.0</text>
-<line x1="46.50" y1="76.26" x2="51.50" y2="76.26" style="stroke: black;stroke-width:1"/>
-<text x="42.50" y="76.26"  text-anchor="end" dy=".4em">8.0</text>
-<rect x="454.50" y="35.00" width="100" height="21" style="fill:white; fill-opacity:0.5; stroke:#333; stroke-width:0.5;" />
-<defs><clipPath id="leg-area"><rect x="494.50" y="35.00" width="58" height="21"/></clipPath></defs>
-<line x1="464.50" y1="46.00" x2="494.50"  y2="46.00" style="fill:none; stroke:#db5f57; stroke-width:2;" />
-<text x="524.50" y="50.00" fill="#111" font-size="12" text-anchor="middle"  clip-path="url(#leg-area)">x^2</text>
+<defs><clipPath id="plot-area"><rect x="70.00" y="25.00" width="495.00" height="325.00"/>
+</clipPath></defs><text  x="317.50" y="15.00" text-anchor="middle"  font-weight="bold">reconstruction error vs compression</text>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="25.00" x2="70.00" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="193.75" y1="25.00" x2="193.75" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="317.50" y1="25.00" x2="317.50" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="441.25" y1="25.00" x2="441.25" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="565.00" y1="25.00" x2="565.00" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="335.23" x2="565.00" y2="335.23"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="276.14" x2="565.00" y2="276.14"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="217.05" x2="565.00" y2="217.05"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="157.95" x2="565.00" y2="157.95"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="98.86" x2="565.00" y2="98.86"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="39.77" x2="565.00" y2="39.77"  style="stroke: #ccc;stroke-width:0.50"/>
+<polyline clip-path="url(#plot-area)" style="fill:none; stroke:#db5f57; stroke-width:2.00;" stroke-dasharray="5, 5" points="70.00,335.23 317.50,276.14 565.00,39.77 " /><rect clip-path="url(#plot-area)"  x="67.00" y="332.23" width="6.00" height="6.00" style="fill:#db5f57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="314.50" y="273.14" width="6.00" height="6.00" style="fill:#db5f57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="562.00" y="36.77" width="6.00" height="6.00" style="fill:#db5f57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect  x="70.00" y="25.00" width="495.00" height="325.00" style="fill:none; fill-opacity:1.00; stroke:black; stroke-width:0.50;" />
+<text  x="317.50" y="387.00" text-anchor="middle"  font-weight="regular">compression</text>
+<text  transform="rotate(270,1.00,187.50) translate(0, 10)"  x="1.00" y="187.50" text-anchor="middle"  font-weight="regular">mse</text>
+<line  x1="70.00" y1="351.00" x2="70.00" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="70.00" y="370.00" text-anchor="middle"  font-weight="regular"><tspan>10<tspan  font-size="11" baseline-shift="super">0</tspan></tspan></text>
+<line  x1="193.75" y1="351.00" x2="193.75" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="193.75" y="370.00" text-anchor="middle"  font-weight="regular"></text>
+<line  x1="317.50" y1="351.00" x2="317.50" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="317.50" y="370.00" text-anchor="middle"  font-weight="regular"><tspan>10<tspan  font-size="11" baseline-shift="super">1</tspan></tspan></text>
+<line  x1="441.25" y1="351.00" x2="441.25" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="441.25" y="370.00" text-anchor="middle"  font-weight="regular"></text>
+<line  x1="565.00" y1="351.00" x2="565.00" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="565.00" y="370.00" text-anchor="middle"  font-weight="regular"><tspan>10<tspan  font-size="11" baseline-shift="super">2</tspan></tspan></text>
+<line  x1="64.00" y1="335.23" x2="69.00" y2="335.23"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="339.23" text-anchor="end"  font-weight="regular">0</text>
+<line  x1="64.00" y1="276.14" x2="69.00" y2="276.14"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="280.14" text-anchor="end"  font-weight="regular">1.0e-2</text>
+<line  x1="64.00" y1="217.05" x2="69.00" y2="217.05"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="221.05" text-anchor="end"  font-weight="regular">2.0e-2</text>
+<line  x1="64.00" y1="157.95" x2="69.00" y2="157.95"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="161.95" text-anchor="end"  font-weight="regular">3.0e-2</text>
+<line  x1="64.00" y1="98.86" x2="69.00" y2="98.86"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="102.86" text-anchor="end"  font-weight="regular">4.0e-2</text>
+<line  x1="64.00" y1="39.77" x2="69.00" y2="39.77"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="43.77" text-anchor="end"  font-weight="regular">5.0e-2</text>
+<rect  x="455.00" y="35.00" width="100.00" height="21.00" style="fill:white; fill-opacity:0.50; stroke:#333; stroke-width:0.50;" />
+<defs><clipPath id="leg-area"><rect x="495.00" y="35.00" width="58.00" height="21.00"/>
+</clipPath></defs><line  x1="465.00" y1="46.00" x2="495.00" y2="46.00" stroke-dasharray="5, 5" style="stroke: #db5f57;stroke-width:2.00"/>
+<text clip-path="url(#leg-area)"  x="525.00" y="50.00" text-anchor="middle"  font-weight="regular">f_avg</text>
+<rect clip-path="url(#plot-area)"  x="477.00" y="43.00" width="6.00" height="6.00" style="fill:#db5f57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
 </svg>
 
