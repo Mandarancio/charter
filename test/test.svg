@@ -17,7 +17,7 @@
 <rect clip-path="url(#plot-area)"  x="562.00" y="36.77" width="6.00" height="6.00" style="fill:#db5f57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
 <rect  x="70.00" y="25.00" width="495.00" height="325.00" style="fill:none; fill-opacity:1.00; stroke:black; stroke-width:0.50;" />
 <text  x="317.50" y="387.00" text-anchor="middle"  font-weight="regular">compression</text>
-<text  transform="rotate(270,10.00,187.50) translate(0, 10)"  x="10.00" y="187.50" text-anchor="middle"  font-weight="regular">mse</text>
+<text  transform="rotate(270,5.00,187.50) translate(0, 10)"  x="5.00" y="187.50" text-anchor="middle"  font-weight="regular">mse</text>
 <line  x1="70.00" y1="351.00" x2="70.00" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
 <text  x="70.00" y="370.00" text-anchor="middle"  font-weight="regular"><tspan>10<tspan  font-size="10" dy="-5" dx="1">0</tspan></tspan></text>
 <line  x1="193.75" y1="351.00" x2="193.75" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
