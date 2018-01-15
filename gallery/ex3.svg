@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="400">
+<defs><clipPath id="plot-area"><rect x="70.00" y="25.00" width="495.00" height="325.00"/>
+</clipPath></defs><line clip-path="url(#plot-area)"  x1="142.50" y1="25.00" x2="142.50" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="242.50" y1="25.00" x2="242.50" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="342.50" y1="25.00" x2="342.50" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="442.50" y1="25.00" x2="442.50" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="542.50" y1="25.00" x2="542.50" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="302.77" x2="565.00" y2="302.77"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="237.83" x2="565.00" y2="237.83"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="172.90" x2="565.00" y2="172.90"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="107.96" x2="565.00" y2="107.96"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="43.02" x2="565.00" y2="43.02"  style="stroke: #ccc;stroke-width:0.50"/>
+<polyline clip-path="url(#plot-area)" style="fill:none; stroke:#db5f57; stroke-width:2.00;"  points="142.50,289.78 192.50,273.55 242.50,250.82 292.50,221.60 342.50,185.88 392.50,143.67 442.50,94.97 492.50,39.77 " /><line clip-path="url(#plot-area)"  x1="139.50" y1="286.78" x2="145.50" y2="292.78"  style="stroke: #db5f57;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="145.50" y1="286.78" x2="139.50" y2="292.78"  style="stroke: #db5f57;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="189.50" y1="270.55" x2="195.50" y2="276.55"  style="stroke: #db5f57;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="195.50" y1="270.55" x2="189.50" y2="276.55"  style="stroke: #db5f57;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="239.50" y1="247.82" x2="245.50" y2="253.82"  style="stroke: #db5f57;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="245.50" y1="247.82" x2="239.50" y2="253.82"  style="stroke: #db5f57;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="289.50" y1="218.60" x2="295.50" y2="224.60"  style="stroke: #db5f57;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="295.50" y1="218.60" x2="289.50" y2="224.60"  style="stroke: #db5f57;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="339.50" y1="182.88" x2="345.50" y2="188.88"  style="stroke: #db5f57;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="345.50" y1="182.88" x2="339.50" y2="188.88"  style="stroke: #db5f57;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="389.50" y1="140.67" x2="395.50" y2="146.67"  style="stroke: #db5f57;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="395.50" y1="140.67" x2="389.50" y2="146.67"  style="stroke: #db5f57;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="439.50" y1="91.97" x2="445.50" y2="97.97"  style="stroke: #db5f57;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="445.50" y1="91.97" x2="439.50" y2="97.97"  style="stroke: #db5f57;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="489.50" y1="36.77" x2="495.50" y2="42.77"  style="stroke: #db5f57;stroke-width:1.50"/>
+<line clip-path="url(#plot-area)"  x1="495.50" y1="36.77" x2="489.50" y2="42.77"  style="stroke: #db5f57;stroke-width:1.50"/>
+<polyline clip-path="url(#plot-area)" style="fill:none; stroke:#dbae57; stroke-width:2.00;"  points="92.50,285.23 97.05,287.78 101.59,290.46 106.14,293.24 110.68,296.09 115.23,299.01 119.77,301.95 124.32,304.90 128.86,307.83 133.41,310.72 137.95,313.55 142.50,316.28 147.05,318.91 151.59,321.40 156.14,323.74 160.68,325.90 165.23,327.88 169.77,329.64 174.32,331.19 178.86,332.49 183.41,333.56 187.95,334.37 192.50,334.92 197.05,335.20 201.59,335.22 206.14,334.96 210.68,334.44 215.23,333.66 219.77,332.63 224.32,331.35 228.86,329.83 233.41,328.09 237.95,326.14 242.50,324.00 247.05,321.68 251.59,319.20 256.14,316.59 260.68,313.87 265.23,311.05 269.77,308.17 274.32,305.24 278.86,302.29 283.41,299.34 287.95,296.43 292.50,293.56 297.05,290.77 301.59,288.08 306.14,285.52 310.68,283.09 315.23,280.83 319.77,278.75 324.32,276.86 328.86,275.19 333.41,273.75 337.95,272.55 342.50,271.60 347.05,270.90 351.59,270.47 356.14,270.31 360.68,270.41 365.23,270.78 369.77,271.41 374.32,272.31 378.86,273.45 383.41,274.84 387.95,276.46 392.50,278.29 397.05,280.33 401.59,282.55 406.14,284.94 410.68,287.48 415.23,290.15 419.77,292.91 424.32,295.76 428.86,298.67 433.41,301.61 437.95,304.56 442.50,307.50 447.05,310.39 451.59,313.23 456.14,315.97 460.68,318.61 465.23,321.12 469.77,323.48 474.32,325.66 478.86,327.66 483.41,329.45 487.95,331.02 492.50,332.36 497.05,333.45 501.59,334.29 506.14,334.87 510.68,335.18 515.23,335.23 519.77,335.01 524.32,334.52 528.86,333.77 533.41,332.76 537.95,331.51 542.50,330.02 " /><rect clip-path="url(#plot-area)"  x="89.50" y="282.23" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="94.05" y="284.78" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="98.59" y="287.46" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="103.14" y="290.24" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="107.68" y="293.09" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="112.23" y="296.01" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="116.77" y="298.95" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="121.32" y="301.90" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="125.86" y="304.83" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="130.41" y="307.72" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="134.95" y="310.55" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="139.50" y="313.28" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="144.05" y="315.91" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="148.59" y="318.40" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="153.14" y="320.74" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="157.68" y="322.90" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="162.23" y="324.88" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="166.77" y="326.64" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="171.32" y="328.19" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="175.86" y="329.49" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="180.41" y="330.56" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="184.95" y="331.37" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="189.50" y="331.92" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="194.05" y="332.20" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="198.59" y="332.22" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="203.14" y="331.96" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="207.68" y="331.44" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="212.23" y="330.66" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="216.77" y="329.63" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="221.32" y="328.35" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="225.86" y="326.83" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="230.41" y="325.09" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="234.95" y="323.14" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="239.50" y="321.00" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="244.05" y="318.68" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="248.59" y="316.20" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="253.14" y="313.59" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="257.68" y="310.87" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="262.23" y="308.05" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="266.77" y="305.17" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="271.32" y="302.24" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="275.86" y="299.29" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="280.41" y="296.34" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="284.95" y="293.43" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="289.50" y="290.56" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="294.05" y="287.77" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="298.59" y="285.08" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="303.14" y="282.52" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="307.68" y="280.09" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="312.23" y="277.83" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="316.77" y="275.75" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="321.32" y="273.86" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="325.86" y="272.19" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="330.41" y="270.75" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="334.95" y="269.55" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="339.50" y="268.60" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="344.05" y="267.90" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="348.59" y="267.47" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="353.14" y="267.31" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="357.68" y="267.41" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="362.23" y="267.78" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="366.77" y="268.41" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="371.32" y="269.31" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="375.86" y="270.45" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="380.41" y="271.84" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="384.95" y="273.46" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="389.50" y="275.29" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="394.05" y="277.33" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="398.59" y="279.55" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="403.14" y="281.94" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="407.68" y="284.48" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="412.23" y="287.15" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="416.77" y="289.91" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="421.32" y="292.76" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="425.86" y="295.67" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="430.41" y="298.61" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="434.95" y="301.56" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="439.50" y="304.50" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="444.05" y="307.39" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="448.59" y="310.23" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="453.14" y="312.97" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="457.68" y="315.61" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="462.23" y="318.12" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="466.77" y="320.48" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="471.32" y="322.66" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="475.86" y="324.66" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="480.41" y="326.45" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="484.95" y="328.02" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="489.50" y="329.36" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="494.05" y="330.45" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="498.59" y="331.29" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="503.14" y="331.87" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="507.68" y="332.18" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="512.23" y="332.23" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="516.77" y="332.01" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="521.32" y="331.52" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="525.86" y="330.77" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="530.41" y="329.76" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="534.95" y="328.51" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect clip-path="url(#plot-area)"  x="539.50" y="327.02" width="6.00" height="6.00" style="fill:#dbae57; fill-opacity:1.00; stroke:none; stroke-width:0.00;" />
+<rect  x="70.00" y="25.00" width="495.00" height="325.00" style="fill:none; fill-opacity:1.00; stroke:black; stroke-width:0.50;" />
+<text  x="317.50" y="387.00" text-anchor="middle"  font-weight="regular">Cost</text>
+<text  transform="rotate(270,5.00,187.50) translate(0, 10)"  x="5.00" y="187.50" text-anchor="middle"  font-weight="regular">Error</text>
+<line  x1="142.50" y1="351.00" x2="142.50" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="142.50" y="370.00" text-anchor="middle"  font-weight="regular">2.0</text>
+<line  x1="242.50" y1="351.00" x2="242.50" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="242.50" y="370.00" text-anchor="middle"  font-weight="regular">4.0</text>
+<line  x1="342.50" y1="351.00" x2="342.50" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="342.50" y="370.00" text-anchor="middle"  font-weight="regular">6.0</text>
+<line  x1="442.50" y1="351.00" x2="442.50" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="442.50" y="370.00" text-anchor="middle"  font-weight="regular">8.0</text>
+<line  x1="542.50" y1="351.00" x2="542.50" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="542.50" y="370.00" text-anchor="middle"  font-weight="regular">10.0</text>
+<line  x1="64.00" y1="302.77" x2="69.00" y2="302.77"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="306.77" text-anchor="end"  font-weight="regular">0</text>
+<line  x1="64.00" y1="237.83" x2="69.00" y2="237.83"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="241.83" text-anchor="end"  font-weight="regular">20.0</text>
+<line  x1="64.00" y1="172.90" x2="69.00" y2="172.90"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="176.90" text-anchor="end"  font-weight="regular">40.0</text>
+<line  x1="64.00" y1="107.96" x2="69.00" y2="107.96"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="111.96" text-anchor="end"  font-weight="regular">60.0</text>
+<line  x1="64.00" y1="43.02" x2="69.00" y2="43.02"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="47.02" text-anchor="end"  font-weight="regular">80.0</text>
+</svg>
+

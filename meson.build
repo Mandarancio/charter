@@ -9,8 +9,8 @@ lib_sources = [
     'src/parser.c',
     'src/charter.c',
     'src/renderer.c',
-    'src/printer.c',
     'src/svg_utils.c',
+    'src/tinyexpr/tinyexpr.c',
     'src/csv_parser/csvparser.c'
 ]
 
@@ -18,8 +18,8 @@ bin_sources = [
     'src/parser.c',
     'src/charter.c',
     'src/renderer.c',
-    'src/printer.c',
    	'src/svg_utils.c',
+    'src/tinyexpr/tinyexpr.c',
     'src/csv_parser/csvparser.c',
     'src/main.c'
 ]

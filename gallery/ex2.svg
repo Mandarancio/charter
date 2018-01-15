@@ -26,7 +26,7 @@
 <line clip-path="url(#plot-area)"  x1="545.50" y1="332.23" x2="539.50" y2="338.23"  style="stroke: red;stroke-width:1.50"/>
 <rect  x="70.00" y="25.00" width="495.00" height="325.00" style="fill:none; fill-opacity:1.00; stroke:black; stroke-width:0.50;" />
 <text  x="317.50" y="387.00" text-anchor="middle"  font-weight="regular">Cost</text>
-<text  transform="rotate(270,10.00,187.50) translate(0, 10)"  x="10.00" y="187.50" text-anchor="middle"  font-weight="regular">Error</text>
+<text  transform="rotate(270,5.00,187.50) translate(0, 10)"  x="5.00" y="187.50" text-anchor="middle"  font-weight="regular">Error</text>
 <line  x1="92.50" y1="351.00" x2="92.50" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
 <text  x="92.50" y="370.00" text-anchor="middle"  font-weight="regular">2.0</text>
 <line  x1="242.50" y1="351.00" x2="242.50" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
