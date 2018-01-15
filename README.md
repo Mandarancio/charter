@@ -52,6 +52,9 @@ Resutls in:
 |```width```| plot width |
 |```height```| plot height |
 |```csv://file_path#tag```| load a csv and use column ```tag``` as values |
+|```range: min max nstep```| linear range to use as values |
+|```logrange: min max nstep```| log range to use as values |
+|```math: f(x)```| math expression based on x to use as y value |
 
 **commas** and **spaces** are valid separator for arrays and the sytax in general.
 For the definitions **spaces**, **tabs** and **:** are equivalents. So ```x: 1 2 3``` is equal to ```x 1,2,3```.
@@ -108,4 +111,5 @@ At the moment _charter_ is integrated in [Marker](https://github.com/fabiocolaci
 
 ## Credits
 
-[csv_parser](https://github.com/JamesRamm/csv_parserhttps://github.com/JamesRamm/csv_parser) 
+ - [csv_parser](https://github.com/JamesRamm/csv_parserhttps://github.com/JamesRamm/csv_parser) 
+ - [tinyexpr](https://github.com/codeplea/tinyexpr)
