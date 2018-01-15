@@ -26,6 +26,8 @@ Resutls in:
 
 ![result](test/test.svg)
 
+**Note:** as the image is an svg the rendering of it is browser dependent, in some browser the ```baseline-shift``` attribute for ```<sup>``` text is not supported.
+
 ## DSL Syntax
 
 | syntax | description |
