@@ -187,7 +187,7 @@ compute_ticks(double min,
             memset(l, 0, 128);
             if (v - round(v) == 0)
             {
-                sprintf(l, "<tspan>10<tspan  font-size=\"11\" baseline-shift=\"super\">%d</tspan></tspan>", (int)v);
+                sprintf(l, "<tspan>10<tspan  font-size=\"10\" dy=\"-5\" dx=\"1\">%d</tspan></tspan>", (int)v);
             }
             if (vertical){
                 pos[i] = origin - dx*((vals[i]) - min);
@@ -213,7 +213,7 @@ compute_ticks(double min,
             {
                 l = malloc(128*sizeof(char));
                 memset(l, 0, 128);
-                sprintf(l, "<tspan>%.1fe<tspan  font-size=\"11\" baseline-shift=\"super\">%d</tspan></tspan>", d,e);
+                sprintf(l, "<tspan>%.1fe<tspan  font-size=\"10\" dy=\"-5\" dx=\"1\">%d</tspan></tspan>", d,e);
             }
             if (vertical){
                 pos[i] = origin - dx*(vals[i] - min);

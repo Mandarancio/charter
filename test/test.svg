@@ -19,27 +19,27 @@
 <text  x="317.50" y="387.00" text-anchor="middle"  font-weight="regular">compression</text>
 <text  transform="rotate(270,1.00,187.50) translate(0, 10)"  x="1.00" y="187.50" text-anchor="middle"  font-weight="regular">mse</text>
 <line  x1="70.00" y1="351.00" x2="70.00" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
-<text  x="70.00" y="370.00" text-anchor="middle"  font-weight="regular"><tspan>10<tspan  font-size="11" baseline-shift="super">0</tspan></tspan></text>
+<text  x="70.00" y="370.00" text-anchor="middle"  font-weight="regular"><tspan>10<tspan  font-size="10" dy="-5" dx="1">0</tspan></tspan></text>
 <line  x1="193.75" y1="351.00" x2="193.75" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
 <text  x="193.75" y="370.00" text-anchor="middle"  font-weight="regular"></text>
 <line  x1="317.50" y1="351.00" x2="317.50" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
-<text  x="317.50" y="370.00" text-anchor="middle"  font-weight="regular"><tspan>10<tspan  font-size="11" baseline-shift="super">1</tspan></tspan></text>
+<text  x="317.50" y="370.00" text-anchor="middle"  font-weight="regular"><tspan>10<tspan  font-size="10" dy="-5" dx="1">1</tspan></tspan></text>
 <line  x1="441.25" y1="351.00" x2="441.25" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
 <text  x="441.25" y="370.00" text-anchor="middle"  font-weight="regular"></text>
 <line  x1="565.00" y1="351.00" x2="565.00" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
-<text  x="565.00" y="370.00" text-anchor="middle"  font-weight="regular"><tspan>10<tspan  font-size="11" baseline-shift="super">2</tspan></tspan></text>
+<text  x="565.00" y="370.00" text-anchor="middle"  font-weight="regular"><tspan>10<tspan  font-size="10" dy="-5" dx="1">2</tspan></tspan></text>
 <line  x1="64.00" y1="335.23" x2="69.00" y2="335.23"  style="stroke: black;stroke-width:1.00"/>
 <text  x="60.00" y="339.23" text-anchor="end"  font-weight="regular">0</text>
 <line  x1="64.00" y1="276.14" x2="69.00" y2="276.14"  style="stroke: black;stroke-width:1.00"/>
-<text  x="60.00" y="280.14" text-anchor="end"  font-weight="regular"><tspan>1.0e<tspan  font-size="11" baseline-shift="super">-2</tspan></tspan></text>
+<text  x="60.00" y="280.14" text-anchor="end"  font-weight="regular"><tspan>1.0e<tspan  font-size="10" dy="-5" dx="1">-2</tspan></tspan></text>
 <line  x1="64.00" y1="217.05" x2="69.00" y2="217.05"  style="stroke: black;stroke-width:1.00"/>
-<text  x="60.00" y="221.05" text-anchor="end"  font-weight="regular"><tspan>2.0e<tspan  font-size="11" baseline-shift="super">-2</tspan></tspan></text>
+<text  x="60.00" y="221.05" text-anchor="end"  font-weight="regular"><tspan>2.0e<tspan  font-size="10" dy="-5" dx="1">-2</tspan></tspan></text>
 <line  x1="64.00" y1="157.95" x2="69.00" y2="157.95"  style="stroke: black;stroke-width:1.00"/>
-<text  x="60.00" y="161.95" text-anchor="end"  font-weight="regular"><tspan>3.0e<tspan  font-size="11" baseline-shift="super">-2</tspan></tspan></text>
+<text  x="60.00" y="161.95" text-anchor="end"  font-weight="regular"><tspan>3.0e<tspan  font-size="10" dy="-5" dx="1">-2</tspan></tspan></text>
 <line  x1="64.00" y1="98.86" x2="69.00" y2="98.86"  style="stroke: black;stroke-width:1.00"/>
-<text  x="60.00" y="102.86" text-anchor="end"  font-weight="regular"><tspan>4.0e<tspan  font-size="11" baseline-shift="super">-2</tspan></tspan></text>
+<text  x="60.00" y="102.86" text-anchor="end"  font-weight="regular"><tspan>4.0e<tspan  font-size="10" dy="-5" dx="1">-2</tspan></tspan></text>
 <line  x1="64.00" y1="39.77" x2="69.00" y2="39.77"  style="stroke: black;stroke-width:1.00"/>
-<text  x="60.00" y="43.77" text-anchor="end"  font-weight="regular"><tspan>5.0e<tspan  font-size="11" baseline-shift="super">-2</tspan></tspan></text>
+<text  x="60.00" y="43.77" text-anchor="end"  font-weight="regular"><tspan>5.0e<tspan  font-size="10" dy="-5" dx="1">-2</tspan></tspan></text>
 <rect  x="455.00" y="35.00" width="100.00" height="21.00" style="fill:white; fill-opacity:0.50; stroke:#333; stroke-width:0.50;" />
 <defs><clipPath id="leg-area"><rect x="495.00" y="35.00" width="58.00" height="21.00"/>
 </clipPath></defs><line  x1="465.00" y1="46.00" x2="495.00" y2="46.00" stroke-dasharray="5, 5" style="stroke: #db5f57;stroke-width:2.00"/>
