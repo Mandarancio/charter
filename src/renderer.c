@@ -416,17 +416,19 @@ get_style(lineStyle s)
 
 void
 legend_to_svg(char*     buffer,
-              plotList* plots,
+              clist* plots,
               svg_plane plane)
 {
-    if (plots == NULL || plots->plot == NULL)
+    if (plots == NULL || plots->data == NULL)
         return;
 
-    plotList * el = plots;
-    unsigned int c = el->plot->label == NULL ? 0 : 1;
+    clist * el = plots;
+    plot* p = el->data;
+    unsigned int c = p->label == NULL ? 0 : 1;
     while ((el = el->next) != NULL)
     {
-        c += el->plot->label == NULL ? 0 : 1;
+        p = el->data;
+        c += p->label == NULL ? 0 : 1;
     }
     if (c == 0)
         return;
@@ -442,9 +444,9 @@ legend_to_svg(char*     buffer,
     int ind= 0;
     while (el!= NULL)
     {
-        if (el->plot->label != NULL)
+        p = el->data;
+        if (p->label != NULL)
         {
-            plot * p = el->plot;
             char * color = p->color;
             if (!color)
             {

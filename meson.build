@@ -6,6 +6,7 @@ project('Charter', 'c',
 PROJECT_NAME = 'charter'
 
 lib_sources = [
+    'src/clist.c',
     'src/parser.c',
     'src/charter.c',
     'src/renderer.c',
@@ -15,6 +16,7 @@ lib_sources = [
 ]
 
 bin_sources = [
+    'src/clist.c',
     'src/parser.c',
     'src/charter.c',
     'src/renderer.c',
