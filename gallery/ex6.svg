@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="400">
+<defs><clipPath id="plot-area"><rect x="70.00" y="25.00" width="495.00" height="325.00"/>
+</clipPath></defs><line clip-path="url(#plot-area)"  x1="83.53" y1="25.00" x2="83.53" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="213.22" y1="25.00" x2="213.22" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="342.91" y1="25.00" x2="342.91" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="472.60" y1="25.00" x2="472.60" y2="350.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="336.00" x2="565.00" y2="336.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="280.00" x2="565.00" y2="280.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="224.00" x2="565.00" y2="224.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="168.00" x2="565.00" y2="168.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="112.00" x2="565.00" y2="112.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<line clip-path="url(#plot-area)"  x1="70.00" y1="56.00" x2="565.00" y2="56.00"  style="stroke: #ccc;stroke-width:0.50"/>
+<polyline clip-path="url(#plot-area)" style="fill:none; stroke:#db5f57; stroke-width:2.00;"  points="83.53,336.00 161.62,286.69 239.70,237.39 317.78,187.18 395.86,137.88 473.94,88.57 552.02,39.00 " /><circle clip-path="url(#plot-area)"  cx="83.53" cy="336.00" r="3.00" fill="#db5f57" /><circle clip-path="url(#plot-area)"  cx="161.62" cy="286.69" r="3.00" fill="#db5f57" /><circle clip-path="url(#plot-area)"  cx="239.70" cy="237.39" r="3.00" fill="#db5f57" /><circle clip-path="url(#plot-area)"  cx="317.78" cy="187.18" r="3.00" fill="#db5f57" /><circle clip-path="url(#plot-area)"  cx="395.86" cy="137.88" r="3.00" fill="#db5f57" /><circle clip-path="url(#plot-area)"  cx="473.94" cy="88.57" r="3.00" fill="#db5f57" /><circle clip-path="url(#plot-area)"  cx="552.02" cy="39.00" r="3.00" fill="#db5f57" /><rect  x="70.00" y="25.00" width="495.00" height="325.00" style="fill:none; fill-opacity:1.00; stroke:black; stroke-width:0.50;" />
+<text  x="317.50" y="387.00" text-anchor="middle"  font-weight="regular">Cost</text>
+<text  transform="rotate(270,5.00,187.50) translate(0, 10)"  x="5.00" y="187.50" text-anchor="middle"  font-weight="regular">Gain</text>
+<line  x1="83.53" y1="351.00" x2="83.53" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="83.53" y="370.00" text-anchor="middle"  font-weight="regular"><tspan>10<tspan  font-size="10" dy="-5" dx="1">1</tspan></tspan></text>
+<line  x1="213.22" y1="351.00" x2="213.22" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="213.22" y="370.00" text-anchor="middle"  font-weight="regular"></text>
+<line  x1="342.91" y1="351.00" x2="342.91" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="342.91" y="370.00" text-anchor="middle"  font-weight="regular"><tspan>10<tspan  font-size="10" dy="-5" dx="1">2</tspan></tspan></text>
+<line  x1="472.60" y1="351.00" x2="472.60" y2="356.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="472.60" y="370.00" text-anchor="middle"  font-weight="regular"></text>
+<line  x1="64.00" y1="336.00" x2="69.00" y2="336.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="340.00" text-anchor="end"  font-weight="regular"><tspan>10<tspan  font-size="10" dy="-5" dx="1">2</tspan></tspan></text>
+<line  x1="64.00" y1="280.00" x2="69.00" y2="280.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="284.00" text-anchor="end"  font-weight="regular"></text>
+<line  x1="64.00" y1="224.00" x2="69.00" y2="224.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="228.00" text-anchor="end"  font-weight="regular"></text>
+<line  x1="64.00" y1="168.00" x2="69.00" y2="168.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="172.00" text-anchor="end"  font-weight="regular"></text>
+<line  x1="64.00" y1="112.00" x2="69.00" y2="112.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="116.00" text-anchor="end"  font-weight="regular"></text>
+<line  x1="64.00" y1="56.00" x2="69.00" y2="56.00"  style="stroke: black;stroke-width:1.00"/>
+<text  x="60.00" y="60.00" text-anchor="end"  font-weight="regular"><tspan>10<tspan  font-size="10" dy="-5" dx="1">3</tspan></tspan></text>
+</svg>
+

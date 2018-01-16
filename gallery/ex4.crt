@@ -1,0 +1,8 @@
+x-axis
+ label x
+y-axis
+ label sin(x)
+plot:
+ x range: -6 6 30
+ y math: sin(x)
+ marker o
