@@ -103,8 +103,8 @@ compute_plane(chart * c)
         p.x_min = chart_get_min_x(c);
     } else
     {
-        p.x_max = ceil(log10(chart_get_max_x(c)));
-        p.x_min = floor(log10(chart_get_min_x(c)));
+        p.x_max = log10(chart_get_max_x(c))+0.05;
+        p.x_min = log10(chart_get_min_x(c))-0.05;
     }
 
     if (c->y_axis.mode == LINEAR)
@@ -113,8 +113,8 @@ compute_plane(chart * c)
         p.y_min = chart_get_min_y(c);
     } else
     {
-        p.y_max = ceil(log10(chart_get_max_y(c)));
-        p.y_min = floor(log10(chart_get_min_y(c)));
+        p.y_max = log10(chart_get_max_y(c))+0.05;
+        p.y_min = log10(chart_get_min_y(c))-0.05;
     }
     return p;
 }
