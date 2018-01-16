@@ -5,6 +5,8 @@ A simple markdown **DSL** and **C Library** to generate svg plot from a minimal 
 
 ## Example
 
+Few examples are available in the [gallery](https://github.com/Mandarancio/charter/wiki/Gallery) page of the wiki.
+
 Simple syntax example:
 
 ```
