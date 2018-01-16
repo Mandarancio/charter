@@ -102,9 +102,9 @@ sudo ninja install
 
 In the next future I will improve the svg quality, the memory performance, and the look and feel of the output plus the following features:
  
- - better log scales
  - more options on grid
  - more styling options
+ - better typesettings
 
 ## Marker integration
 At the moment _charter_ is integrated in [Marker](https://github.com/fabiocolacio/Marker/)!
