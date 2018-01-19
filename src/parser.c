@@ -241,7 +241,7 @@ void* parse_data(char* line, unsigned int *l, dtype  * type)
         double max = 0;
         unsigned int num = 10;
         char * rest = get_rest(local, 6);
-        double * data = NULL; 
+        double * data = NULL;
         
         if (parse_range(rest, &min, &max, &num)  && max != min && num > 0)
         {
@@ -339,7 +339,7 @@ parse_y_data(chart *chart, char* line)
     p->y_type = t; 
     if (t == ND)
         return;
-    if (t == DATA || t == CSV)
+    if (t != MATH)
     {        
         p->n = l;
     }
@@ -399,7 +399,7 @@ plot * init_bar()
     color[7] = 0;
     memcpy(color, "#000000", 7);
 
-    pref->bar_width = 0.8;
+    pref->bar_width = 35;
     pref->line_color = color; 
     p->extra_data = pref;
     return p; 

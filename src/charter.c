@@ -2,6 +2,7 @@
 #include "tinyexpr/tinyexpr.h"
 
 #include <stdlib.h>
+#include <stdio.h>
 
 chart * 
 initialize_empty_chart()
@@ -70,12 +71,11 @@ double * eval_math(plot *p)
     int err;
     /* Compile the expression with variables. */
     te_expr *expr = te_compile((const char*)p->y_data, vars, 1, &err);
-
     if (expr) {
         unsigned int i;
         for (i = 0; i < p->n ;i++)
         {
-            x = p->x_data[i];
+            x = p->x_data[i];            
             eval[i] = te_eval(expr);
         }
     }
@@ -221,6 +221,8 @@ double chart_get_max_y(chart *c)
         }
         if (c->y_axis.mode == LINEAR)
             M += (M-m)*0.05;
+        if (M == m)
+            return M + 0.5;
         return M;
     }
     return c->y_axis.range_max;
@@ -249,6 +251,8 @@ double chart_get_min_y(chart *c)
         }
         if (c->y_axis.mode == LINEAR)
             m -= (M-m)*0.05;
+        if (M == m)
+            return m - 0.5;
         return m;
     }
     return c->y_axis.range_min;
