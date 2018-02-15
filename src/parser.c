@@ -669,10 +669,9 @@ chart *
 parse_chart(char *text)
 {
     chart* nchart = initialize_empty_chart();
-
-    char * copy = text;
     char* tok_pointer;
-    char* line = strtok_r(copy, "\n", &tok_pointer);
+
+    char* line = strtok_r(text, "\n", &tok_pointer);
     _pstate state = NONE;
     while (line != NULL)
     {
