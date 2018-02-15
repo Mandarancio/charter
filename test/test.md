@@ -7,6 +7,6 @@ y-axis:
 plot:
 	x: 1 10    100
 	y: 0 0.01  0.05
-	label: f_avg
+	label: $f_{avg}$
  	marker: s
  	ls: --

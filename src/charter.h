@@ -3,6 +3,7 @@
 
 #include "clist.h"
 
+
 enum{
     LINEAR      = 0,
     LOG         = 1
@@ -72,7 +73,7 @@ struct
 
 struct{
     axis            x_axis;
-    axis            y_axis;   
+    axis            y_axis;
     unsigned int    width;
     unsigned int    height;
     clist*          plots;
@@ -80,41 +81,41 @@ struct{
     char *          title;
 }typedef chart;
 
-double * 
+double *
 plot_eval_y(plot *p);
 
-unsigned int 
+unsigned int
 chart_add_plot(chart*, plot*);
 
-plot* 
+plot*
 chart_get_plot(chart*, unsigned int);
 
 chart*
 initialize_empty_chart();
 
 
-double 
+double
 plot_get_max_x(plot *);
 
-double 
+double
 plot_get_max_y(plot *);
 
-double 
+double
 plot_get_min_x(plot *);
 
-double 
+double
 plot_get_min_y(plot *);
 
-double 
+double
 chart_get_max_x(chart *);
 
-double 
+double
 chart_get_max_y(chart *);
 
-double 
+double
 chart_get_min_x(chart *);
 
-double 
+double
 chart_get_min_y(chart *);
 
 void chart_free(chart *);

@@ -3,7 +3,10 @@
 
 #include "charter.h"
 
-char* 
+char*
 chart_to_svg(chart*);
+
+char*
+chart_to_latex(chart *);
 
 #endif
