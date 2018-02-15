@@ -40,5 +40,3 @@ executable(
     c_args: '-g',
     install: true
 )
-
-.pagebreak { page-break-before: always; } /* page-break-after works, as well */
