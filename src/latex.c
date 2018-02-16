@@ -105,9 +105,9 @@ render_plot(cstr *str,
   if (plot->type == BAR)
   {
     barPref * pref = plot->extra_data;
-    cstr_printf(str, "\tbar width=%f,\n", pref->bar_width/2);
+    cstr_printf(str, "\tbar width=%f,\n", pref->bar_width);
   }
-  cstr_printf(str, "\tline width = %fpt,\n", plot->line_width);
+  cstr_printf(str, "\tline width = %fpt,\n", plot->line_width/2);
 
   switch (plot->line_style)
   {
