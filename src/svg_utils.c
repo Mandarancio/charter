@@ -34,7 +34,7 @@ svg_header(char*  buffer,
            unsigned int height)
 {
     sprintf(buffer,
-            "<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" width=\"100\%\" viewbox=\"0 0 %u %u\">\n",
+            "<svg class=\"charter\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" width=\"100%%\" viewbox=\"0 0 %u %u\">\n",
             width, height);
 }
 
