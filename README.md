@@ -1,5 +1,5 @@
 # CHARTER
-A simple markdown **DSL** and **C Library** to generate svg plot from a minimal syntax.
+A simple markdown **DSL** and **C Library** to generate *svg* and *pgfplot* (*LaTeX*)  plot from a minimal syntax.
 
 
 
