@@ -6,6 +6,8 @@
 #include <math.h>
 #include <string.h>
 
+#include <locale.h>
+
 
 #define x_margin 35
 #define y_margin 25
@@ -188,7 +190,7 @@ compute_ticks(double min,
             if (v - round(v) == 0)
             {
                 sprintf(l, "<tspan>10<tspan  font-size=\"10\" dy=\"-5\" dx=\"1\">%d</tspan></tspan>", (int)v);
-            } 
+            }
             if (vertical){
                 pos[i] = origin - dx*((vals[i]) - min);
             }else
@@ -196,7 +198,7 @@ compute_ticks(double min,
                 pos[i] = origin + dx*((vals[i]) - min);
             }
         }else{
-    
+
             if (v == 0)
             {
                 l = malloc(8*sizeof(char));
@@ -704,6 +706,7 @@ title_to_svg(char* buffer,
 char *
 chart_to_svg(chart* chart)
 {
+    setlocale(LC_ALL, "en_US");
     char * buffer = malloc(1024*1024*sizeof(char));
     memset(buffer, 0, 1024*1024);
     svg_header(buffer, chart->width, chart->height);
@@ -733,5 +736,7 @@ chart_to_svg(chart* chart)
 
     ticks_free(x_t);
     ticks_free(y_t);
+
+    setlocale(LC_ALL, "");
     return buffer;
 }
