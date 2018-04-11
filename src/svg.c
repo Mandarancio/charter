@@ -737,6 +737,6 @@ chart_to_svg(chart* chart)
     ticks_free(x_t);
     ticks_free(y_t);
 
-    setlocale(LC_ALL, "");
+    setlocale(LC_ALL, "C");
     return buffer;
 }
