@@ -36,7 +36,7 @@ Resutls in:
 | :----- | :------  |
 |```plot```| create a new line plot|
 |```scatter```| create a new scatter plot|
-|```scatter```| create a new bar plot  |
+|```bar```| create a new bar plot  |
 |```x-axis```| parameters for the x axis |
 |```y-axis```| parameters for the y axis |
 |```label``` | label for axis or plot |
