@@ -452,8 +452,7 @@ legend_to_svg(char*     buffer,
             char * color = p->color;
             if (!color)
             {
-                color = malloc(8*sizeof(char));
-                memcpy(color, colormap[ind%10], 7);
+                color = strdup(colormap[ind%10]);
             }
             y+= dh;
             if (p->type == LINE && p->line_style != NOLINE)
@@ -502,8 +501,7 @@ line_plot_to_svg(char*          buffer,
 
     if (!color)
     {
-        color = malloc(8*sizeof(char));
-        memcpy(color, colormap[index%10], 7);
+        color = strdup(colormap[index%10]);
     }
     double * y_data = plot_eval_y(p);
 
@@ -560,8 +558,7 @@ scatter_to_svg(char*        buffer,
 
     if (!color)
     {
-        color = malloc(8*sizeof(char));
-        memcpy(color, colormap[index%10], 7);
+        color = strdup(colormap[index%10]);
     }
     double * y_data = plot_eval_y(p);
 
@@ -599,8 +596,7 @@ bar_to_svg(char*        buffer,
 
     if (!color)
     {
-        color = malloc(8*sizeof(char));
-        memcpy(color, colormap[index%10], 7);
+        color = strdup(colormap[index%10]);
     }
     barPref * pref = p->extra_data;
     double y0 = get_y(0, plane, c->y_axis);
